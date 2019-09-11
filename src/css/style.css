@@ -1,0 +1,110 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: helvetica;
+  color: #3e3e3e;
+}
+
+.description {
+  font-size: 14px;
+  color: #9e9e9e;
+}
+
+.panel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#editor {
+  width: 100%;
+  height: 100%;
+}
+
+#solsource {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+}
+.swiper-slide:nth-child(1n) {
+    width: 85%;
+}
+.swiper-slide:nth-child(2n) {
+    width: 15%;
+}
+.swiper-slide:nth-child(3n), .swiper-slide:nth-child(4n) {
+    width: 43%;
+}
+.slide-special {
+  width: 42%!important;
+}
+
+#code, #jcode {
+  height: 100%;
+  width: 35%;
+}
+
+#dlist {
+  height: 100%;
+  width: 20%;
+}
+
+#blocklyArea {
+  height: 70%;
+}
+
+#dcustomlist {
+  width: 100%;
+  height: 69%;
+  font-size: 14px;
+}
+#dbaselist {
+  width: 100%;
+  height: 28%;
+  font-size: 14px;
+}
+
+.contain {
+  height: 100%;
+  /* margin-right: 50px; */
+}
+
+.visualdtype {
+  width: 100%;
+  height: 100%;
+  /* padding-left: 50px; */
+}
+
+#addCustomdType {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.navbuttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}

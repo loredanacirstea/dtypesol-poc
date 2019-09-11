@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>dType Transpiler</title>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide no-swipe">
+            <div class="visualdtype">
+              <div id="blocklyDiv"></div>
+              <!-- <div id="blocklyDiv" style="position: absolute"></div> -->
+              <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+                <block type="dtype_def"></block>
+                <block type="dtype_op"></block>
+                <block type="dtype_value"></block>
+                <block type="dtype_array"></block>
+              </xml>
+              <div id="blocklyArea"></div>
+              <button id="addCustomdType">+</button>
+            </div>
+          </div>
+          <div class="swiper-slide no-swipe">
+            <div class="contain">
+              <!-- <textarea id="dtypedefcode" ></textarea>
+              <textarea id="dtypejsoncode" ></textarea> -->
+              <textarea id="dcustomlist" ></textarea>
+              <textarea id="dbaselist" ></textarea>
+            </div>
+          </div>
+          <div class="swiper-slide no-swipe">
+            <div id="editor"></div>
+            <!-- <div class="panel">
+              <div id="editor"></div>
+              <div id="solsource"></div>
+            </div> -->
+          </div>
+          <button id="transpile">></button>
+          <div class="swiper-slide no-swipe slide-special">
+            <div id="solsource"></div>
+          </div>
+      </div>
+
+      <!-- <div class="navbuttons">
+        <button class="swiper-prev"><</button>
+        <button class="swiper-next">></button>
+      </div> -->
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+  </div>
+</body>
+</html>
