@@ -193,13 +193,27 @@ pragma experimental ABIEncoderV2;
 
 
 contract GeopointContract {
+  Geopoint[] public geopoints;
 
+  function addGeopoint(int32 longitude, int32 latitude) public {
+      Geopoint memory geo = Geopoint(Longitude(longitude), Latitude(latitude));
+      geopoints.push(geo);
+  }
+
+  function geoStuff(uint256 index1, uint256 index2) public {
+    Distance memory dist = calculateDistance(geopoints[index1], geopoints[index2]);
+  }
 }
 `;
 
-// Geopoint[] public geopoints;
-//
-// function addGeopoint(int32 longitude, int32 latitude) public {
-//     Geopoint memory geo = Geopoint(Longitude(longitude), Latitude(latitude));
-//     geopoints.push(geo);
-// }
+// Distance memory dist = geopoints[index1].calculateDistance(geopoints[index2]);
+// Geopoints[] memory nearGeos = geopoints[index1].geoShenanigans(dist);
+
+// address libaddress = address(0x08970FEd061E7747CD9a38d680A601510CB659FB);
+// (bool success, bytes memory data) = libaddress.staticcall(abi.encodeWithSignature(
+//     'calculateDistance(((uint256),(uint256)),((uint256),(uint256)))',
+//     geopoints[index1],
+//     geopoints[index2]
+// ));
+// require(success == true);
+// Distance memory dist =  abi.decode(data, (Distance));

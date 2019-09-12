@@ -37,6 +37,18 @@ export default [
       "source": "0x0000000000000000000000000000000000000000000000000000000000000000"
   },
   {
+      "name": "Distance",
+      "types": [
+          {"name": "uint256", "label": "distance", "relation": 0, "dimensions":[]},
+      ],
+      "optionals": [],
+      "outputs": [],
+      "lang": 0,
+      "typeChoice": 0,
+      "contractAddress": "0x0000000000000000000000000000000000000000",
+      "source": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
       "name": "Area",
       "types": [
           {"name": "Geopoint", "label": "geo", "relation": 0, "dimensions":['7', '3']},
